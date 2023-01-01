@@ -7,6 +7,7 @@ import "@openzeppelin/contracts@4.6.0/access/Ownable.sol";
 import "@openzeppelin/contracts@4.6.0/token/ERC20/extensions/draft-ERC20Permit.sol";
 import "@openzeppelin/contracts@4.6.0/token/ERC721/utils/ERC721Holder.sol";
 
+//Implementation of FNFT
 contract FractionalizedNFT is ERC20, Ownable, ERC20Permit, ERC721Holder {
     IERC721 public collection;
     uint256 public tokenId;
